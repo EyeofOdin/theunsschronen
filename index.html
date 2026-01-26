@@ -45,6 +45,42 @@
     .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 40px 0; }
     .image-gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: block; }
 
+    .map-section {
+      margin: 40px 0;
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: 300px;
+      width: 100%;
+    }
+    .map-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .contact-info-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+    .contact-info-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: #dbeafe;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1e40af;
+      flex-shrink: 0;
+    }
+
     .cta-box {
       background: linear-gradient(135deg, #0c4a6e, #1e40af);
       color: white; padding: 35px; border-radius: 16px; text-align: center; margin: 40px 0;
@@ -78,6 +114,7 @@
       .container { padding: 20px; }
       .tagline { font-size: 1.1rem; }
       .image-gallery { grid-template-columns: 1fr; }
+      .map-section { height: 250px; }
     }
   </style>
 </head>
@@ -85,7 +122,7 @@
   <header>
     <div class="hero-content">
       <h1>Manufacturing Specialist & Consultant</h1>
-      <h2>OHSA Compliance | Lean Manufacturing</h2>
+      <h2>OHSA Compliance | Lean Manufacturing | Operational Excellence</h2>
       <p>Make your workplace safer, leaner, and more profitable.</p>
     </div>
   </header>
@@ -94,18 +131,18 @@
     <!-- Value Proposition -->
     <div class="content-section">
       <h2>Value Proposition</h2>
-      <p>I help manufacturers achieve OHSA compliance, reduce risk, and eliminate waste through proven Lean Manufacturing strategies.</p>
-      <p><strong>The result?</strong></p>
+      <p>I help manufacturers achieve OHSA compliance, reduce risk, and eliminate waste through proven Lean Manufacturing strategies—backed by over 30 years of hands-on operations leadership in high-volume printing and manufacturing environments.</p>
+      <p>My approach blends strategic oversight with disciplined execution to deliver:</p>
       
       <div class="value-props">
         <div class="prop-item">
-          <h3>Fewer incidents</h3>
+          <h3>20%+ throughput gain</h3>
         </div>
         <div class="prop-item">
-          <h3>Higher productivity</h3>
+          <h3>Up to 25% waste reduction</h3>
         </div>
         <div class="prop-item">
-          <h3>Stronger operations</h3>
+          <h3>Predictable, measurable performance</h3>
         </div>
       </div>
     </div>
@@ -123,7 +160,7 @@
         </div>
         <div class="about-card">
           <h3>Commitment</h3>
-          <p>Expert Occupational Health & Safety services you can trust.</p>
+          <p>Expert Occupational Health & Safety services you can trust—supported by deep operational experience in production leadership, ERP systems, and end-to-end workflow optimization.</p>
         </div>
       </div>
     </div>
@@ -144,21 +181,24 @@
       <h2>Services Offered</h2>
       <div class="services-grid">
         <div class="service-card">
-          <h3>OHSA Compliance</h3>
+          <h3>OHSA Compliance & Safety Leadership</h3>
           <ul>
             <li>Risk Assessments & Safety Audits</li>
             <li>SHE Files & Compliance Documentation</li>
             <li>Incident Investigation & Training</li>
-            <li>Construction Safety Management</li>
+            <li>Construction & Plant Safety Management</li>
+            <li>Safety Culture Development</li>
           </ul>
         </div>
         <div class="service-card">
-          <h3>Lean Manufacturing</h3>
+          <h3>Operational Excellence & Lean Manufacturing</h3>
           <ul>
-            <li>5S Implementation</li>
-            <li>LEAN Process Optimization</li>
-            <li>KAIZEN Continuous Improvement</li>
-            <li>Efficiency Engineering</li>
+            <li>5S Implementation & Sustained Discipline</li>
+            <li>End-to-End Workflow Optimization</li>
+            <li>KAIZEN & Continuous Improvement Programs</li>
+            <li>Throughput & OEE Improvement</li>
+            <li>ERP/MRP Process Alignment (e.g., Microsoft Dynamics AX)</li>
+            <li>Production Planning & Scheduling</li>
           </ul>
         </div>
       </div>
@@ -167,32 +207,50 @@
     <!-- Why Work With Theuns -->
     <div class="content-section">
       <h2>Why Work With Theuns</h2>
+      <p>With over three decades of experience leading high-performance manufacturing and printing operations, I bring more than compliance—I deliver transformation.</p>
       <div class="benefits-grid">
         <div class="benefit-col">
           <h3>Protect Your People</h3>
           <ul>
-            <li>Safer work environments</li>
-            <li>OHSA compliance assured</li>
-            <li>Expert training & investigation</li>
+            <li>Safer, compliant work environments</li>
+            <li>Strong safety culture & accountability</li>
+            <li>Reduced incidents & near-misses</li>
           </ul>
         </div>
         <div class="benefit-col">
-          <h3>Protect Your Business</h3>
+          <h3>Strengthen Your Business</h3>
           <ul>
-            <li>Reduced liability & risk</li>
-            <li>Leaner, more efficient operations</li>
-            <li>Higher profitability</li>
+            <li>20%+ throughput improvement</li>
+            <li>Up to 25% waste reduction</li>
+            <li>Stable, predictable operations</li>
+            <li>Lower costs, higher profitability</li>
           </ul>
         </div>
       </div>
       <p style="text-align:center; margin-top:20px; font-weight:bold; font-style:italic;">
-        Let's turn compliance into a competitive advantage.
+        Let's turn compliance and efficiency into your competitive advantage.
+      </p>
+    </div>
+
+    <!-- MAP SECTION -->
+    <div class="content-section">
+      <h2>Location</h2>
+      <div class="map-section">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.704276852211!2d18.48970627582284!3d-33.83253867374496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5e8b8a5d8c0d%3A0x4d8f3b0a7e8a1c1a!2s164%20Tryall%20Rd%2C%20Table%20View%2C%20Cape%20Town%2C%207500!5e0!3m2!1sen!2sza!4v1738000000000!5m2!1sen!2sza" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p style="margin-top:15px; text-align:center; font-size:1.1rem;">
+        <strong>164 Tryall Rd, Table View, Cape Town, 7500</strong>
       </p>
     </div>
 
     <!-- Call to Action -->
     <div class="cta-box">
-      <h2>Ready to Transform Your Operations?</h2>
+      <h2>Ready to Elevate Your Operations?</h2>
       <p>📞 Call or WhatsApp: <strong>083 456 4864</strong></p>
       <a href="https://wa.me/27834564864" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i> Message on WhatsApp
@@ -212,20 +270,43 @@
           </form>
         </div>
         <div>
-          <h3>Service Area</h3>
-          <p>Manufacturing, Construction & Industrial Operations across South Africa</p>
-          <h3 style="margin-top:20px;">Contact</h3>
-          <p><i class="fas fa-phone"></i> 083 456 4864</p>
-          <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/27834564864" style="color:#1e40af;">083 456 4864</a></p>
+          <h3>Contact Details</h3>
+          <ul class="contact-info-list">
+            <li>
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>164 Tryall Rd, Table View, Cape Town, 7500</div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>083 456 4864</div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <a href="https://wa.me/27834564864" style="color:#0f172a; text-decoration:underline;">WhatsApp</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <a href="mailto:theuns.schronen1967@gmail.com" style="color:#0f172a; text-decoration:underline;">theuns.schronen1967@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+          <h3 style="margin-top:25px;">Service Area</h3>
+          <p>Manufacturing, Printing, Construction & Industrial Operations across South Africa</p>
         </div>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>Theuns Schronen | Occupational Health & Safety Consultant</p>
-    <p>Specializing in OHSA Compliance & Lean Manufacturing for South African Industry</p>
-    <p>📞 083 456 4864 | WhatsApp: <a href="https://wa.me/27834564864" style="color:#64748b;">083 456 4864</a></p>
+    <p>Theuns Schronen | Occupational Health & Safety & Operational Excellence Consultant</p>
+    <p>📍 164 Tryall Rd, Table View, Cape Town, 7500</p>
+    <p>
+      📞 083 456 4864 | 
+      <a href="mailto:theuns.schronen1967@gmail.com" style="color:#64748b;">theuns.schronen1967@gmail.com</a>
+    </p>
     <p style="margin-top:10px;">
       Stay OHSA compliant. Stay safe.<br>
       Optimize. Comply. Succeed.<br>
