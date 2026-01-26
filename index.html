@@ -93,19 +93,6 @@
       font-weight: bold; font-size: 1.1rem; margin-top: 10px;
     }
 
-    .contact-section { margin-top: 40px; padding-top: 30px; border-top: 1px solid #e2e8f0; }
-    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%; padding: 14px; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem;
-    }
-    .contact-form textarea { height: 120px; resize: vertical; }
-    .contact-form button {
-      background: #1e40af; color: white; border: none; padding: 14px 25px; font-size: 1.1rem;
-      border-radius: 8px; cursor: pointer; margin-top: 10px; font-weight: bold;
-    }
-    .contact-form button:hover { background: #0c4a6e; }
-
     footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.95rem; margin-top: 20px; background: #f8fafc; line-height: 1.6; }
     @media (max-width: 600px) {
       .hero-content h1 { font-size: 2.3rem; }
@@ -173,6 +160,7 @@
       <img src="safety-training.jpg" alt="Safety Training at Construction Site">
       <img src="factory-optimization.jpg" alt="Optimized Production Line After Lean Implementation">
       <img src="plant-safety-inspection.jpg" alt="Plant Safety Inspection – Machinery Guarding">
+      <img src="lean-production-line.jpg" alt="Lean Production Line – Workflow Optimization">
     </div>
 
     <!-- Services Offered -->
@@ -256,46 +244,34 @@
       </a>
     </div>
 
-    <!-- Contact Section -->
-    <div class="contact-section">
+    <!-- Contact Info Only -->
+    <div class="content-section">
       <h2>Contact</h2>
-      <div class="contact-grid">
-        <div class="contact-form">
-          <form id="cf" name="contact" netlify>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="How can I assist your business?" required></textarea>
-            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-          </form>
-        </div>
-        <div>
-          <h3>Contact Details</h3>
-          <ul class="contact-info-list">
-            <li>
-              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div>164 Tryall Rd, Table View, Cape Town, 7500</div>
-            </li>
-            <li>
-              <div class="contact-icon"><i class="fas fa-phone"></i></div>
-              <div>083 456 4864</div>
-            </li>
-            <li>
-              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-              <div>
-                <a href="https://wa.me/27834564864" style="color:#0f172a; text-decoration:underline;">WhatsApp</a>
-              </div>
-            </li>
-            <li>
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <a href="mailto:theuns.schronen1967@gmail.com" style="color:#0f172a; text-decoration:underline;">theuns.schronen1967@gmail.com</a>
-              </div>
-            </li>
-          </ul>
-          <h3 style="margin-top:25px;">Service Area</h3>
-          <p>Manufacturing, Printing, Construction & Industrial Operations across South Africa</p>
-        </div>
-      </div>
+      <ul class="contact-info-list">
+        <li>
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>164 Tryall Rd, Table View, Cape Town, 7500</div>
+        </li>
+        <li>
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>083 456 4864</div>
+        </li>
+        <li>
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <a href="https://wa.me/27834564864" style="color:#0f172a; text-decoration:underline;">WhatsApp</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <a href="mailto:theuns.schronen1967@gmail.com" style="color:#0f172a; text-decoration:underline;">theuns.schronen1967@gmail.com</a>
+          </div>
+        </li>
+      </ul>
+      <p style="margin-top:20px; font-size:1.1rem;">
+        <strong>Service Area:</strong> Manufacturing, Printing, Construction & Industrial Operations across South Africa
+      </p>
     </div>
   </div>
 
